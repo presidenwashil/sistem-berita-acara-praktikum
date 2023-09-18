@@ -22,11 +22,15 @@ if (isset($_GET['id'])) {
             <style>
                 /* CSS untuk tampilan cetakan */
                 body {
-                    font-family: Arial, sans-serif;
+                    font-family: 'Times New Roman', Times, serif, sans-serif;
                     margin: 20px;
                 }
 
                 h1 {
+                    text-align: center;
+                }
+
+                h2 {
                     text-align: center;
                 }
 
@@ -61,6 +65,11 @@ if (isset($_GET['id'])) {
                         margin-bottom: 20px;
                     }
 
+                    h2 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
                     .berita-acara {
                         border: none;
                         page-break-before: always;
@@ -72,12 +81,16 @@ if (isset($_GET['id'])) {
         </head>
 
         <body>
-            <h1>Berita Acara Praktikum</h1>
+            <h2>SEKOLAH TINGGI MANAJEMEN INFORMATIKA dan KOMPUTER</h2>
+            <h1><strong>WIDYA CIPTA DHARMA</strong></h1>
+            <p>Jl. Prof. Moh. Yamin No. 25 Telp. (0541) 736071, Fax (0541) 203492 Samarinda</p>
+            <h2>==========================================================================================================</h2>
+            <h1>Berita Acara</h1>
+            <h1>Penyelenggaraan Praktikum</h1>
             <div class="berita-acara">
                 <div class="info">
-                    <strong>Jenjang:</strong>
-                    <?php echo $row['jenjang']; ?><br>
-                    <strong>Jurusan:</strong>
+                    <strong>Jenjang/Jurusan:</strong>
+                    <?php echo $row['jenjang']; ?> /
                     <?php echo $row['jurusan']; ?><br>
                     <strong>Nama Matakuliah:</strong>
                     <?php echo $row['nama_matakuliah']; ?><br>
